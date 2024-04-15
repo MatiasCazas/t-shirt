@@ -1,0 +1,61 @@
+.header {
+    background-color: #492A76;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%; /* Make the header cover the whole width */
+    border-top: 2px solid #ddd; /* Line above header */
+    border-bottom: 2px solid #ddd; /* Line below header */
+}
+
+.logo {
+    width: 40px; /* Adjust according to your logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.title {
+    color: #89FF95;
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+}
+
+.button-container {
+    display: flex;
+    margin-right: 10px;
+}
+
+.button {
+    color: #89FF95;
+    background-color: transparent;
+    border: none;
+    padding: 10px 16px; /* Increase padding for larger buttons */
+    margin-left: 10px;
+    font-size: 18px; /* Increase font size */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.button:hover {
+    color: #89FF95; /* Darken text color on hover */
+}
+
+/* Reduce space between buttons */
+.button + .button {
+    margin-left: 5px;
+}
+
+.cart-container {
+    margin-left: auto; /* Push cart to the right */
+}
+
+/* Style for the shopping cart icon */
+.fa-shopping-cart {
+    color: white; /* Set color */
+    font-size: 24px; /* Adjust size */
+    cursor: pointer;
+    margin-right: 20px;
+}
