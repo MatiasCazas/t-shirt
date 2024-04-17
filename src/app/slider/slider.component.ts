@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './slider.component.css'
 })
 export class SliderComponent {
-  images: string[] = ['assets/image1.jpeg', 'assets/image2.jfif', 'assets/image3.jpg'];
+  images: string[] = ['assets/img65-u.jpg', 'assets/img57-u.jpg', 'assets/img48-u.jpg'];
   currentIndex = 0;
   translateValue = 0;
 
