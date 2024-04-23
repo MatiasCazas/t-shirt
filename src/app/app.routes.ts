@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { DesignComponent } from './design/design.component';
 import { CustomizationComponent } from './customization/customization.component';
+import { MessageComponent } from './message/message.component';
+import { FooterComponent } from './footer/footer.component';
 
 export const routes: Routes = [
     { 
@@ -16,4 +18,6 @@ export const routes: Routes = [
         path: "customize",
         component: CustomizationComponent,
     },
+    {path: "message", component: MessageComponent},
+    {path: "footer", component: FooterComponent}
 ];
