@@ -3,41 +3,32 @@
     color: white;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 2px;
     margin-bottom: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 15px;
-    width: 90%; /* Make the header cover the whole width */
+    width: 100%; /* Make the header cover the whole width */
     border-top: 2px solid #4f2c85; /* Line above header */
     border-bottom: 2px solid #4f2c85; /* Line below header */
 }
 
-.logo {
-    width: 40px; /* Adjust according to your logo size */
+.btn {
+    width: 100px; /* Adjust according to your logo size */
     height: auto;
     margin-right: 15px;
 }
 
 .title {
-    color: #89FF95;
+    color: #89ff958f;
     margin: 0;
     font-size: 26px;
     flex-grow: 1;
     font-family: cursive;
 }
 
-.button-container {
-    display: flex;
-    margin-right: 10px;
-}
-
-.button {
-    color: #89FF95;
+.nav-link {
+    color: #89ff959d;
     background-color: transparent;
     border: none;
     padding: 10px 16px; /* Increase padding for larger buttons */
-    margin-left: 10px;
     font-size: 20px; /* Increase font size */
     cursor: pointer;
     transition: color 0.3s ease; /* Smooth transition for color change */
@@ -45,7 +36,7 @@
 }
 
 .button:hover {
-    color: #89ff955d; /* Darken text color on hover */
+    color: #89ff957a; /* Darken text color on hover */
 }
 
 /* Reduce space between buttons */
@@ -53,15 +44,15 @@
     margin-left: 5px;
 }
 
-.cart-container {
-    margin-left: auto; /* Push cart to the right */
+.fa-whatsapp{
+    margin-right: 7px;
+    font-size: 25px;
 }
 
-/* Style for the shopping cart icon */
-.fa-shopping-cart {
-    color:  #89ff95d0;
-    ; /* Set color */
-    font-size: 24px; /* Adjust size */
-    cursor: pointer;
-    margin-right: 20px;
+.fa-envelope{
+    margin-right: 7px;
+}
+
+.fa-bars{
+    margin-right: 7px;
 }
