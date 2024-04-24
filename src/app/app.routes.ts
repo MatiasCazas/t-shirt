@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { KidsComponent } from './kids/kids.component';
 import { EgresadosComponent } from './egresados/egresados.component';
+import { TeensComponent } from './teens/teens.component';
 
 export const routes: Routes = [
     {
@@ -32,6 +33,10 @@ export const routes: Routes = [
     {
         path: "egresados",
         component: EgresadosComponent,
+    },
+    {
+        path: "teens",
+        component: TeensComponent,
     },
     {path: "message", component: MessageComponent},
     {path: "footer", component: FooterComponent}
