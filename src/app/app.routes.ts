@@ -5,6 +5,8 @@ import { CustomizationComponent } from './customization/customization.component'
 import { MessageComponent } from './message/message.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { KidsComponent } from './kids/kids.component';
+import { EgresadosComponent } from './egresados/egresados.component';
 
 export const routes: Routes = [
     {
@@ -22,6 +24,14 @@ export const routes: Routes = [
     { 
         path: "customize",
         component: CustomizationComponent,
+    },
+    {
+        path: "kids",
+        component: KidsComponent,
+    },
+    {
+        path: "egresados",
+        component: EgresadosComponent,
     },
     {path: "message", component: MessageComponent},
     {path: "footer", component: FooterComponent}
