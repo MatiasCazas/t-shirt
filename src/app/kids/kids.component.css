@@ -1,0 +1,26 @@
+.container{
+    margin-top: 140px;
+    position: relative;
+}
+.msg{
+    margin-top: 60px;
+    text-align: center;
+}
+.img{
+    width: 400px;
+    height: 400px;
+}
+.logo{
+    position: relative;
+
+}
+.carousel{
+    margin-top: 30px;
+    margin-left: 350px;
+    width: 600px;
+  
+}
+.msg2{
+    margin-top: 30px;
+    text-align: center;
+}
