@@ -21,23 +21,20 @@
     margin: 0;
     font-size: 26px;
     flex-grow: 1;
-    font-family: cursive;
+    font-family: 'Barlow', sans-serif;
 }
 
 .nav-link {
-    color: #89ff959d;
+    color: #fff;
     background-color: transparent;
     border: none;
     padding: 10px 16px; /* Increase padding for larger buttons */
     font-size: 20px; /* Increase font size */
     cursor: pointer;
     transition: color 0.3s ease; /* Smooth transition for color change */
-    font-family: cursive;
+    font-family: 'Barlow', sans-serif;
 }
 
-.button:hover {
-    color: #89ff957a; /* Darken text color on hover */
-}
 
 /* Reduce space between buttons */
 .button + .button {
