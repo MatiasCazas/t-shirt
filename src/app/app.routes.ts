@@ -4,8 +4,13 @@ import { DesignComponent } from './design/design.component';
 import { CustomizationComponent } from './customization/customization.component';
 import { MessageComponent } from './message/message.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
+    {
+        path: "",
+        component: HomeComponent
+    },
     { 
         path: "checkout", 
         component: CheckoutComponent
