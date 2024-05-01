@@ -81,4 +81,60 @@
         </div>
     </div>
 
+    <div class="container mb-3" style="margin-top: 20px; ">
+        <p style="font-size: 50px;font-family: 'Dela Gothic One'; text-align: center;">¡Sumate a la comunidad HY!</p>
+        <div class="row align-items-center" style="margin-left: 30px;">
+            <div class="col-6 col-sm-1"><i class="fa-brands fa-instagram" style="font-size: 40px;text-align: center;"></i></div>
+            <div class="col-6 col-sm-2"><p style="font-size: 20px;font-family: 'Dela Gothic One'; text-align: center;">&#64;heyyouegresados</p></div>
+        </div>
+        <div class="row align-items-center" style="margin-top: 15px; margin-left: 30px;">
+            <div class="col-6 col-sm-1"><i class="fa-brands fa-tiktok" style="font-size: 40px"></i></div>
+            <div class="col-6 col-sm-2"><p style="font-size: 20px;font-family: 'Dela Gothic One'; text-align: center;">&#64;heyyouegresados</p></div>
+        </div>
+        <div class="row align-items-center" style="margin-top: 15px; margin-left: 30px;">
+            <div class="col-6 col-sm-1"><i class="fa-brands fa-facebook" style="font-size: 40px"></i></div>
+            <div class="col-6 col-sm-8"><p style="font-size: 20px;font-family: 'Dela Gothic One';">Hey You - Buzos para egresados</p></div>
+        </div>
+    </div>
+
+
+
+    <div class="container" style="margin-top: 20px;">
+        <p style="font-size: 40px;font-family: 'Dela Gothic One'; text-align: center;">Consultanos</p>
+        <form>            
+            <div class="form-floating mt-3 mb-3">
+                <input type="text" class="form-control" id="txt" placeholder="Enter text" name="txt">
+                <label for="txt">Nombre y Apellido</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <select id="selectProvincias" class="form-select">
+                    <option value="Elige una provincia">Elige una provincia</option>
+                </select>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <select id="selectMunicipios" class="form-select">
+                    <option value="Elige un municipio">Elige un municipio</option>
+                </select>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="number" class="form-control" placeholder="Cantidad de alumnos">
+                <label>Cantidad de alumnos</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input class="form-control" placeholder="Año de egreso" type="number" id="anio" name="anio" min="2024" max="2100" required>          
+                <label for="anio">Año de egreso</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input class="form-control" placeholder="Telefono" type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{7}" required />
+                <label>Telefono</label>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+                <label for="email">Email</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    
 </div>
