@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent {
 
   
-  images: string[] = ['assets/slider_1.jpg','assets/slider_2.jpg', 'assets/slider_3.jpg'];
+  images: string[] = ['assets/slide1.jpg','assets/slide2.jpg', 'assets/slide3.jpg'];
   currentIndex = 0;
   translateValue = 0;
 
