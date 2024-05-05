@@ -15,7 +15,9 @@ export class HomeComponent {
   currentIndex = 0;
   translateValue = 0;
 
-  constructor() { }
+  constructor() { 
+
+  }
 
   ngOnInit(): void {
   }

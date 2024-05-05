@@ -1,0 +1,23 @@
+.footer-img{
+    background-color: #e4e4e4;
+    margin-top: 40px;
+}
+
+.footer{
+    font-size: 12px;
+    text-align: center;
+    color: #4f2c85;
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    color:#4f2c85;
+}
+.contacto{
+    font-family: Dela Gothic One;
+    font-size: 30px;
+}
+.contacto2{
+    font-size: 18px;
+    margin-right: 20px;
+
+}

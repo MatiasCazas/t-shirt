@@ -91,14 +91,40 @@
         <img src="assets/sumate_1.jpg">
     </div>
 
-    <div class="container" style="margin-bottom: 40px;">
+    <div class="container-fluid" style="margin-bottom: 40px;">
+        <p class="msg-consulta">Consultanos</p>
         <form>
-            <div class="row align-items-center rounded" style="color: #E2E2E2;">
-                <input type="text" class="form-control" id="autoSizingInput" placeholder="Nombre y Apellido">
-            </div>
-            <div class="row align-items-center">
-                <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
-            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="Nombre-Apellido" placeholder="Nombre y apellido" required>
+                <label for="Nombre-Apellido">Nombre y apellido</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="provincia" placeholder="Provinvia" required>
+                <label for="provincia">Provincia</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="ciudad" placeholder="Ciudad" required>
+                <label for="iudad">Ciudad</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="promo" placeholder="promo" min=2024 required>
+                <label for="promo">Promo</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInput" placeholder="Cantidad de alumnos" min=1 required>
+                <label for="floatingInput">Cantidad de alumnos</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="msg form-control" id="mensaje" placeholder="Tu mensaje..." style="height: 150px;" required></textarea>
+                <label for="mensaje">Tu mensaje</label>
+              </div>
+              <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
         </form>
     </div>
 

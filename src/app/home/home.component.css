@@ -46,3 +46,33 @@
 .home-message{
     font-family: 'Dela Gothic One';
 }
+
+.msg-consulta{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Dela Gothic One';
+  color: rgb(231, 118, 12);
+}
+
+
+.form-floating{
+  margin-left:  220px;
+  margin-right: 220px;
+}
+
+
+.form-control{
+  border-radius: 35px;
+}
+.btn{
+  border: 0;
+  border-radius: 35px;
+  background-color: rgb(231, 118, 12);
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin-left: 220px;
+  margin-right: 220px;
+  height: auto;
+  font-family: 'Dela Gothic One';
+}
+.btn:hover {background-color: rgba(231, 118, 12, 0.76);}
