@@ -16,53 +16,6 @@ export class HomeComponent {
   translateValue = 0;
 
   constructor() { 
-    const documentRef: Document = document;
-    const selectProvincias: HTMLElement | null = documentRef.getElementById("selectProvincias");
-    const selectMunicipio: HTMLElement | null = documentRef.getElementById("selectMunicipio");
-
-    function provincias(): void {
-      const selectProvincias: HTMLElement | null = documentRef.getElementById("selectProvincias");
-
-      fetch("https://apis.datos.gob.ar/georef/api/provincias")
-      .then((res: Response) => res.ok ? res.json() : Promise.reject(res))
-      .then((json: any) => {
-            let optionsString: string = `<option value="Elige una provincia">Elige una provincia</option>`;
-
-            json.provincias.forEach((element: any) => {
-                optionsString += `<option value="${element.nombre}">${element.nombre}</option>`;
-            });
-
-            if (selectProvincias) {
-                selectProvincias.innerHTML = optionsString;
-            }
-
-            console.log(json.provincias);
-        });
-  }
-
-  documentRef.addEventListener("DOMContentLoaded", provincias);
-  function municipios(): void {
-    const selectMunicipios: HTMLElement | null = documentRef.getElementById("selectMunicipios");
-
-    fetch(`https://apis.datos.gob.ar/georef/api/municipios`)
-    .then((res: Response) => res.ok ? res.json() : Promise.reject(res))
-    .then((json: any) => {
-          let optionsString: string = `<option value="Elige un municipio">Elige un municipio</option>`;
-
-          json.municipios.forEach((element: any) => {
-              optionsString += `<option value="${element.id}">${element.nombre}</option>`;
-          });
-
-          if (selectMunicipios) {
-            selectMunicipios.innerHTML = optionsString;
-          }
-
-          console.log(json.provincias);
-      });
-}
-
-documentRef.addEventListener("DOMContentLoaded", municipios);
-
 
   }
 
