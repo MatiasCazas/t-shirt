@@ -3,7 +3,7 @@
 
     <div class="container mt-8 mb-5 text-center home-message" style="margin-top: 160px;">
         <p style="font-size: 40px;">Personaliza el buzo de tu promo o elegi tu combo</p>
-        <p style="font-size: 40px;">Estamos <a style="color: #4f2c85;font-size: 50px;"> en todas</a></p>
+        <p style="font-size: 40px;color: #4f2c85;">Estamos en todas</p>
     </div>
 
     <!-- <div class="container w-100" style="width: 100%;">
@@ -40,7 +40,7 @@
         <button class="next-button" (click)="nextSlide()">&#10095;</button>
     </div>
 
-    <div class="container container mt-5 mb-5 text-center">
+    <div class="container container mt-5 mb-5 text-center" style="font-family: 'Dela Gothic One';color: #4f2c85;">
         <h2>Chusmeá los combos que tenemos para tu curso </h2>
     </div>
 
@@ -48,25 +48,25 @@
         <div class="row">
             <div class="col-sm-3 mb-8" style="margin-right:0%;">
             <div class="card">
-                <img src="assets/kids.jpg">
+                <img src="assets/menu-kids.jpg">
                 
             </div>
             </div>
             <div class="col-sm-3 mb-8" style="margin-right:0%;">
             <div class="card">
-                <img src="assets/basics.jpg">
+                <img src="assets/menu-basics.jpg">
                 
             </div>
             </div>
             <div class="col-sm-3 mb-8" style="margin-right:0%;">
                 <div class="card">
-                    <img src="assets/egresados.jpg">
+                    <img src="assets/menu-egresados.jpg">
                 
                 </div>
             </div>
             <div class="col-sm-3 mb-8" style="margin-right:0%;">
                 <div class="card">
-                    <img src="assets/basics.jpg">
+                    <img src="assets/menu-teens.jpg">
                 
                 </div>
             </div>
@@ -75,66 +75,35 @@
     </div>
 
 
-    <div class="container mt-8">
+    <div class="container mt-8" style="margin-bottom: 40px;">
         <div class="ratio ratio-16x9">
             <iframe src="assets/video.mp4" title="YouTube video" allowfullscreen></iframe>
         </div>
     </div>
 
-    <div class="container mb-3" style="margin-top: 20px; ">
-        <p style="font-size: 50px;font-family: 'Dela Gothic One'; text-align: center;">¡Sumate a la comunidad HY!</p>
-        <div class="row align-items-center" style="margin-left: 30px;">
-            <div class="col-6 col-sm-1"><i class="fa-brands fa-instagram" style="font-size: 40px;text-align: center;"></i></div>
-            <div class="col-6 col-sm-2"><p style="font-size: 20px;font-family: 'Dela Gothic One'; text-align: center;">&#64;heyyouegresados</p></div>
-        </div>
-        <div class="row align-items-center" style="margin-top: 15px; margin-left: 30px;">
-            <div class="col-6 col-sm-1"><i class="fa-brands fa-tiktok" style="font-size: 40px"></i></div>
-            <div class="col-6 col-sm-2"><p style="font-size: 20px;font-family: 'Dela Gothic One'; text-align: center;">&#64;heyyouegresados</p></div>
-        </div>
-        <div class="row align-items-center" style="margin-top: 15px; margin-left: 30px;">
-            <div class="col-6 col-sm-1"><i class="fa-brands fa-facebook" style="font-size: 40px"></i></div>
-            <div class="col-6 col-sm-8"><p style="font-size: 20px;font-family: 'Dela Gothic One';">Hey You - Buzos para egresados</p></div>
-        </div>
+    <div class="container" style="width: 100%;">
+        <img src="assets/envios_1.png">
     </div>
 
 
+    <!--sumate a la comunidad hey you-->
+    <div class="slider-container text-center">
+        <img src="assets/sumate_1.jpg">
+    </div>
 
-    <div class="container" style="margin-top: 20px;">
-        <p style="font-size: 40px;font-family: 'Dela Gothic One'; text-align: center;">Consultanos</p>
-        <form>            
-            <div class="form-floating mt-3 mb-3">
-                <input type="text" class="form-control" id="txt" placeholder="Enter text" name="txt">
-                <label for="txt">Nombre y Apellido</label>
+    <div class="container" style="margin-bottom: 40px;">
+        <form>
+            <div class="row align-items-center rounded" style="color: #E2E2E2;">
+                <input type="text" class="form-control" id="autoSizingInput" placeholder="Nombre y Apellido">
             </div>
-            <div class="form-floating mb-3 mt-3">
-                <select id="selectProvincias" class="form-select">
-                    <option value="Elige una provincia">Elige una provincia</option>
-                </select>
+            <div class="row align-items-center">
+                <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
             </div>
-            <div class="form-floating mb-3 mt-3">
-                <select id="selectMunicipios" class="form-select">
-                    <option value="Elige un municipio">Elige un municipio</option>
-                </select>
-            </div>
-            <div class="form-floating mb-3 mt-3">
-                <input type="number" class="form-control" placeholder="Cantidad de alumnos">
-                <label>Cantidad de alumnos</label>
-            </div>
-            <div class="form-floating mb-3 mt-3">
-                <input class="form-control" placeholder="Año de egreso" type="number" id="anio" name="anio" min="2024" max="2100" required>          
-                <label for="anio">Año de egreso</label>
-            </div>
-            <div class="form-floating mb-3 mt-3">
-                <input class="form-control" placeholder="Telefono" type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{7}" required />
-                <label>Telefono</label>
-            </div>
-            <div class="form-floating mb-3 mt-3">
-                <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
-                <label for="email">Email</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-    
-    
+
+    <div class="container text-center">
+        <img src="assets/botones-base.jpg">
+    </div>
+
 </div>
