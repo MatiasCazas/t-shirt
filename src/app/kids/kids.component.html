@@ -1,51 +1,47 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <img src="assets/logo.jpg" alt="Logo">
-            <div class="kids-msg mt-8 mb-5 text-center" style="margin-top: 20px;">
-              <p style="font-size: 30px;">Elegí el combo de <a style="color: #4f2c85; font-size: 40px;"> remera +</a></p>
-              <p style="font-size: 30px;"><a style="color: #4f2c85;font-size: 40px;">buzo </a>para la salita de jardin</p>
-            </div>        
-        </div>
-        <div class="col">
-            <img src="assets/niño.jpg" class="img">
-        </div>
-    </div>
+<div class="container-fluid" style=" background-image: url(assets/Kids/cabecera-kids.jpg); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat; background-position: center;margin-top: 30px; ">
+
 </div>
-<div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="assets/img31.jpg" class="d-block w-100" alt="...">
+<div class="container-fluid" style="background-color: orangered; margin-top: 0px;">
+  <p style="color: white; text-align: center; font-size: 40px; font-family: Dela Gothic One;"> Armamos estos diseños exclusivos. ¡Elegí el tuyo! </p>
+</div>
+
+<div class="slider-container" style="margin-top: 0px;">
+  <div class="slider" [style.transform]="'translateX(' + translateValue + '%)'">
+      <div class="slide" *ngFor="let image of images; let i = index">
+          <img [src]="image" alt="Slide {{i + 1}}">
       </div>
-      <div class="carousel-item">
-        <img src="assets/img48-u.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="assets/img31.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-<div class="msg2">
-    <h2>Hey You está en todas, ¡aprovechá estos beneficios!</h2>
+  <button  type="button" class="btn mx-auto btn-primary btn-lg  " >¡LO QUIERO!</button>
+  <button class="prev-button" (click)="prevSlide()">&#10094;</button>
+  <button class="next-button" (click)="nextSlide()">&#10095;</button>
+ 
+</div>  
+
+<div class="container-fluid">
+  <img src="assets/Kids/combos-kids.jpg" style="width: 90%;">
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col"> 
-            <img src="assets/img35-u.jpg">
-        </div>
-        <div class="col"> 
-            <img src="assets/bandera.jpg">
-        </div>
-        <div class="col"> 
-            <img src="assets/seño.jpg">
-        </div>
-    </div>
+<div class="msg">
+  <p style="color:rgb(173, 114, 228); font-size: 30px; font-family: Dela Gothic One;">HEY YOU ESTÁ EN TODAS,</p>
+  <p style="color:rgb(120, 9, 223); font-size: 40px; font-family: Dela Gothic One">¡APROVECHÁ ESTOS BENEFICIOS!</p>
+</div>
+
+<div class="container-combos text-center" style="margin-top: 30 px;">
+  <div class="row">
+      <div class="col"> 
+          <img src="assets/Kids/boton-mellis.jpg">
+      </div>
+      <div class="col"> 
+          <img src="assets/Kids/boton-bandera.jpg">
+      </div>
+      <div class="col"> 
+          <img src="assets/Kids/boton-bandera-seno.jpg">
+      </div>
+  </div>
+  <div class="row" style="margin-top: 45px; margin-left: 30px;">
+      <button class="btn-reunion">SOLICITÁ UNA REUNIÓN ONILINE</button>
+  </div>
+</div>
+
+<div class="container text-center" style="margin-top: 60px;">
+  <img src="assets/botones-base.jpg">
 </div>
