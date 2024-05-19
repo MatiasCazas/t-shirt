@@ -1,51 +1,57 @@
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <img src="assets/logo.jpg" alt="Logo">
-            <h2 class="msg"> Tenemos todo para tu <br>
-                promo, ¡este es tu año!</h2>   
-        </div>
-        <div class="col">
-            <img src="assets/img48-u.jpg" class="img">
+<div class="container-fluid" style=" background-image: url(assets/Teens/cabecera-teens.jpg); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat; background-position: center;margin-top: 30px; ">
+
+</div>
+<div class="container-fluid" style="background-color: orangered; margin-top: 0px;">
+    <p style="color: white; text-align: center; font-size: 40px; font-family: Dela Gothic One;"> Diseñamos estos combos para la banda </p>
+</div>
+
+<div class="slider-container" style="margin-top: 0px;">
+    <div class="slider" [style.transform]="'translateX(' + translateValue + '%)'">
+        <div class="slide" *ngFor="let image of images; let i = index">
+            <img [src]="image" alt="Slide {{i + 1}}">
         </div>
     </div>
+    <button  type="button" class="btn mx-auto btn-primary btn-lg  " >¡LO QUIERO!</button>
+    <button class="prev-button" (click)="prevSlide()">&#10094;</button>
+    <button class="next-button" (click)="nextSlide()">&#10095;</button>
+   
+</div> 
+
+<div class="container-fluid">
+    <img src="assets/Teens/combos-teens.jpg" style="width: 90%;">
 </div>
+
+<div class="container-fluid" style="background-image: url(assets/Egresados/fondo-personalizar.jpg); width: 100%; height: 30vh; background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="row">
+        <p class= "personaliza">O PERSONALIZÁ TU BUZO ACÁ</p>
+    </div>
+    <div class="row">
+        <button class="btn-personaliza btn-primary" type="submit"><a href="/customize" style="color:white;">DISEÑÁ TU COMBO</a></button>
+    </div>
+</div>
+
 <div class="msg">
-    <h2>Diseñamos estos combos para la banda</h2>
-    <img src="assets/img54.jpg">
+    <p style="color:rgb(173, 114, 228); font-size: 30px; font-family: Dela Gothic One;">HEY YOU ESTÁ EN TODAS,</p>
+    <p style="color:rgb(120, 9, 223); font-size: 40px; font-family: Dela Gothic One">¡APROVECHÁ ESTOS BENEFICIOS!</p>
 </div>
-<div class="container">
-    <div class="row">
-        <h3>Pack FULL: campera + buzo + remera + chomba</h3>
-    </div>
-    <div class="row">
-        <h3>Pack 2: buzo + remera + chomba</h3>
-    </div>
-    <div class="row">
-        <h3>Pack 3: buzo + remara</h3>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h3> PERSONALIZA TU BUZO ACÁ </h3>
-        </div>
-        <div class="col">
-            <button type="button" class="btn btn-primary btn-lg">DISEÑÁ TU COMBO</button>
-        </div>
-    </div>
-</div>
-<div class="msg">
-    <h2>Hey You está en todas, ¡aprovechá estos beneficios</h2>
-</div>
-<div class="container">
-    <div class="row">
+
+<div class="container-combos text-center" style="margin-top: 30 px;">
+    <div class="row" style="margin-left: 70px;">
         <div class="col"> 
-            <img src="assets/img35-u.jpg">
+            <img src="assets/Teens/boton-bandera.jpg">
         </div>
         <div class="col"> 
-            <img src="assets/bandera.jpg">
+            <img src="assets/Teens/boton-beneficios.jpg">
         </div>
         <div class="col"> 
-            <img src="assets/seño.jpg">
+            <img src="assets/Teens/boton-envios.jpg">
         </div>
     </div>
+    <div class="row" style="margin-top: 45px; margin-left: 30px;">
+        <button class="btn-reunion">SOLICITÁ UNA REUNIÓN ONILINE</button>
+    </div>
+</div>
+
+<div class="container text-center" style="margin-top: 60px;">
+    <img src="assets/botones-base.jpg">
 </div>

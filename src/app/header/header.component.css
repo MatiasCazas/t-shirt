@@ -16,6 +16,10 @@
     margin-right: 15px;
 }
 
+.nav-link:hover{
+    color: rgba(255, 255, 255, 0.514);
+}
+
 .title {
     color: #89ff958f;
     margin: 0;
@@ -32,9 +36,11 @@
     font-size: 20px; /* Increase font size */
     cursor: pointer;
     transition: color 0.3s ease; /* Smooth transition for color change */
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Dela Gothic One';
 }
-
+.nav-link:hover{
+    color: #89FF95;
+}
 
 /* Reduce space between buttons */
 .button + .button {

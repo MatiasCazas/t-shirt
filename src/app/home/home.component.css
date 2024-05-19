@@ -76,3 +76,16 @@
   font-family: 'Dela Gothic One';
 }
 .btn:hover {background-color: rgba(231, 118, 12, 0.76);}
+
+.envios{
+  margin-right: 220px;
+
+}
+
+.container-fluid{
+  margin-top: 45px;
+}
+
+.sumate{
+  margin-top: 45px;
+}
