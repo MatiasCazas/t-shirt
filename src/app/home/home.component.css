@@ -1,43 +1,66 @@
 .slider-container {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    margin-top: 90px;
+  position: relative;
+  width:100%;
+  height: 34vw;
+  max-height: 682px;
+  overflow: hidden;
+  margin: 40px auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #89FF95;;
+  font-size: 24px;
+  cursor: pointer;
+  border-color: #89FF95;;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .slider-container {
+      height: auto; 
   }
-  
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease;
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+      height: auto; 
   }
-  
-  .slide {
-    flex: 0 0 100%;
-  }
-  
-  .slide img {
-    width: 100%;
-  }
-  
+
   .prev-button, .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #89FF95;
-    font-size: 24px;
-    cursor: pointer;
-    border-color: #89FF95;
+      font-size: 20px;
+      padding: 8px;
   }
-  
-  .prev-button {
-    left: 10px;
-  }
-  
-  .next-button {
-    right: 10px;
-  }
+}
+
+
+
   
 .container-message{
   margin-top: 150px;
@@ -45,8 +68,19 @@
 
 .home-message{
     font-family: 'Dela Gothic One';
+      opacity: 0;
+      animation: fadeInText 0.8s ease-in forwards 1.7s; 
 }
 
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  }
+}
 .msg-consulta{
   font-size: 40px;
   text-align: center;
@@ -77,6 +111,20 @@
 }
 .btn:hover {background-color: rgba(231, 118, 12, 0.76);}
 
+.btn-reunion{
+    border: 0;
+    border-radius: 35px;
+    background-color: rgb(231, 118, 12);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-left: 100px;
+    margin-right: 220px;
+    width: 60%;
+    height: auto;
+    font-family: 'Dela Gothic One';
+  }
+  .btn:hover {background-color: rgba(231, 118, 12, 0.76);} 
+
 .envios{
   margin-right: 220px;
 
@@ -88,4 +136,85 @@
 
 .sumate{
   margin-top: 45px;
+}
+
+@media (max-width: 1200px) {
+  .form-floating, .btn {
+      margin-left: 150px;
+      margin-right: 150px;
+  }
+
+  .envios {
+      margin-right: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .form-floating, .btn {
+      margin-left: 100px;
+      margin-right: 100px;
+  }
+
+  .envios {
+      margin-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-floating, .btn {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+  .envios {
+      margin-right: 50px;
+  }
+
+  .msg-consulta {
+      font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form-floating, .btn {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .envios {
+      margin-right: 20px;
+  }
+
+  .slider-container {
+      height: 400px;
+  }
+
+  .prev-button, .next-button {
+      font-size: 20px;
+  }
+
+  .msg-consulta {
+      font-size: 25px;
+  }
+}
+
+.promo-text {
+  font-size: 40px;
+  font-family: 'Dela Gothic One';
+  color: #4f2c85;
+  margin-top: 40px;
+}
+
+@media (max-width: 767px) {
+  .promo-text {
+      font-size: 30px;
+      margin-left: 0;
+  }
+
+  .btn {
+      margin-top: 20px;
+  }
+  .ser-parte-nvo{
+    margin-top: 20px;
+  }
 }

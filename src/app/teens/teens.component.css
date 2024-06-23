@@ -6,96 +6,146 @@
     margin-top: 40px;
     text-align: center;
 }
-.slider-container {
-    position: relative;
-    width: 100%;
-    height: 600px;
-    overflow: hidden;
-    margin-top: 90px;
-    background-color: #e4e4e4;
+@media (max-width: 480px) {
+  .msg {
+      font-size: 18px; 
   }
-  
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  
-  .slide {
-    flex: 0 0 100%;
-  }
-  
-  .slide img {
-    width: 100%;
-  }
-  
-  .prev-button, .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: none;
-    border: none;
-    color: #89FF95;
-    font-size: 24px;
-    cursor: pointer;
-    border-color: #89FF95;
-  }
-  
-  .prev-button {
-    left: 10px;
-  }
-  
-  .next-button {
-    right: 10px;
-  }
-.btn{
-    position: absolute;
-    bottom: 2%;
-    right: 40%;
-    font-family: Dela Gothic One;
-    color: #ffffff;
-    font-size: 24px;
-    cursor: pointer;
-    background-color: rgb(105, 5, 145);
-    border-color: rgb(105, 5, 145);
 }
-.btn:hover{
-    background-color: rgba(105, 5, 145, 0.767);
+.slider-container {
+  position: relative;
+  width:100%;
+  height: 34vw;
+  max-height: 682px;
+  overflow: hidden;
+  margin: 40px auto;
 }
 
-.personaliza{
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    font-family: Dela Gothic One;
-    
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
 }
-.btn-personaliza{
-    border: 0;
-    border-radius: 24px;
-    background-color: rgb(231, 118, 12);
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    height: auto;
-    font-family: 'Dela Gothic One';
-    width: 435px;
-    position: absolute;
-    right: 33%;
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.prev-button, .next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #89FF95;
+  font-size: 24px;
+  cursor: pointer;
+  border-color: #89FF95;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Dela Gothic One';
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: rgb(105, 5, 145);
+  border-color: rgb(105, 5, 145);
+}
+
+.btn:hover {
+  background-color: rgba(105, 5, 145, 0.767);
+}
+@media (max-width: 768px) {
+  .slider-container {
+      height: auto; 
   }
+}
+
+@media (max-width: 480px) {
+  .slider-container {
+      height: auto; 
+  }
+
+  .prev-button, .next-button {
+      font-size: 20px;
+      padding: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+      font-size: 18px; 
+      bottom: 3px;
+  }
+}
+.personaliza {
+  font-size: 28px;
+  font-family: 'Dela Gothic One';
+  color: white;
+  margin-bottom: 32px;
+}
+
+.btn-personaliza{
+  border: 0;
+  border-radius: 24px;
+  background-color: rgb(231, 118, 12);
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  height: auto;
+  font-family: 'Dela Gothic One';
+  width: 435px;
+  position: absolute;
+  right: 33%;
+}
 
 .btn-personaliza:hover{
-    background-color: rgba(231, 118, 12, 0.76);
+  background-color: rgba(231, 118, 12, 0.76);
+}
+@media (max-width: 768px) {
+  .personaliza {
+      font-size: 20px;
+      margin-left: 20px;
+  }
+  
+  .btn-personaliza {
+      font-size: 16px; 
+      padding: 10px 20px; 
+      position: relative;
+      left: 20px;
+  }
 }
 .btn-reunion{
-    border: 0px;
-    border-radius: 24px;
-    color: white;
-    font-family: 'Dela Gothic One';
-    background-color: rgb(231, 118, 12);
-    position: absolute;
-    right: 33%;
-    padding: 14px 40px;
-    width: 435px;
+  border: 0px;
+  border-radius: 24px;
+  color: white;
+  font-family: 'Dela Gothic One';
+  background-color: rgb(231, 118, 12);
+  position: absolute;
+  right: 33%;
+  padding: 14px 40px;
+  width: 100%; 
+  max-width: 435px; 
+  margin: 0 auto;
+}
+.btn-reunion:hover{
+  background-color: rgba(231, 118, 12, 0.705);
+}
+@media (max-width: 576px) {
+  .btn-reunion {
+      font-size: 18px; 
+      padding: 12px 30px; 
   }
-  .btn-reunion:hover{
-    background-color: rgba(231, 118, 12, 0.705);
-  }
+}

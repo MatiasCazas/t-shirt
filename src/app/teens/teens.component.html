@@ -1,5 +1,5 @@
-<div class="container-fluid" style=" background-image: url(assets/Teens/cabecera-teens.jpg); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat; background-position: center;margin-top: 30px; ">
-
+<div class="container-fluid" style="margin-top: 60px; ">
+    <img class="img-fluid" src="assets/Teens/cabecera-teens.jpg">
 </div>
 <div class="container-fluid" style="background-color: orangered; margin-top: 0px;">
     <p style="color: white; text-align: center; font-size: 40px; font-family: Dela Gothic One;"> Diseñamos estos combos para la banda </p>
@@ -18,17 +18,18 @@
 </div> 
 
 <div class="container-fluid">
-    <img src="assets/Teens/combos-teens.jpg" style="width: 90%;">
+    <img  class="img-fluid" src="assets/Teens/combos-teens.jpg" style="width: 90%;">
 </div>
 
-<div class="container-fluid" style="background-image: url(assets/Egresados/fondo-personalizar.jpg); width: 100%; height: 30vh; background-size: cover; background-repeat: no-repeat; background-position: center;">
-    <div class="row">
-        <p class= "personaliza">O PERSONALIZÁ TU BUZO ACÁ</p>
-    </div>
-    <div class="row">
-        <button class="btn-personaliza btn-primary" type="submit"><a href="/customize" style="color:white;">DISEÑÁ TU COMBO</a></button>
+<div class="container-fluid" style="background-image: url(assets/Egresados/fondo-personalizar.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="row justify-content-center align-items-center" style="height: 30vh;">
+        <div class="col text-center">
+            <p class="personaliza">O PERSONALIZÁ TU BUZO ACÁ</p>
+            <button (click)="goToCustomize()" class="btn-personaliza btn-primary" type="submit">DISEÑÁ TU COMBO</button> 
+        </div>
     </div>
 </div>
+
 
 <div class="msg">
     <p style="color:rgb(173, 114, 228); font-size: 30px; font-family: Dela Gothic One;">HEY YOU ESTÁ EN TODAS,</p>
@@ -36,22 +37,22 @@
 </div>
 
 <div class="container-combos text-center" style="margin-top: 30 px;">
-    <div class="row" style="margin-left: 70px;">
+    <div class="row" style="margin-left: 5px;">
         <div class="col"> 
-            <img src="assets/Teens/boton-bandera.jpg">
+            <img class="img-fluid" src="assets/Teens/boton-bandera.jpg">
         </div>
         <div class="col"> 
-            <img src="assets/Teens/boton-beneficios.jpg">
+            <img class="img-fluid" src="assets/Teens/boton-beneficios.jpg">
         </div>
         <div class="col"> 
-            <img src="assets/Teens/boton-envios.jpg">
+            <img class="img-fluid" src="assets/Teens/boton-envios.jpg">
         </div>
     </div>
     <div class="row" style="margin-top: 45px; margin-left: 30px;">
-        <button class="btn-reunion">SOLICITÁ UNA REUNIÓN ONILINE</button>
+        <button (click)="goToMessage()" class="btn-reunion">SOLICITÁ UNA REUNIÓN ONILINE</button>
     </div>
 </div>
 
 <div class="container text-center" style="margin-top: 60px;">
-    <img src="assets/botones-base.jpg">
+    <img class="img-fluid" src="assets/botones-base.jpg">
 </div>

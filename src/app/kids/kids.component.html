@@ -1,5 +1,5 @@
-<div class="container-fluid" style=" background-image: url(assets/Kids/cabecera-kids.jpg); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat; background-position: center;margin-top: 30px; ">
-
+<div class="container-fluid" style="margin-top: 60px;">
+ <img class="img-fluid" src="assets/Kids/cabecera-kids.jpg">
 </div>
 <div class="container-fluid" style="background-color: orangered; margin-top: 0px;">
   <p style="color: white; text-align: center; font-size: 40px; font-family: Dela Gothic One;"> Armamos estos diseños exclusivos. ¡Elegí el tuyo! </p>
@@ -11,14 +11,15 @@
           <img [src]="image" alt="Slide {{i + 1}}">
       </div>
   </div>
-  <button  type="button" class="btn mx-auto btn-primary btn-lg  " >¡LO QUIERO!</button>
+  <div class="d-flex justify-content-center mt-3">
+      <button type="button" class="btn btn-primary btn-lg">¡LO QUIERO!</button>
+  </div>
   <button class="prev-button" (click)="prevSlide()">&#10094;</button>
   <button class="next-button" (click)="nextSlide()">&#10095;</button>
- 
-</div>  
+</div>
 
 <div class="container-fluid">
-  <img src="assets/Kids/combos-kids.jpg" style="width: 90%;">
+  <img class="img-fluid" src="assets/Kids/combos-kids.jpg" style="width: 90%;">
 </div>
 <div class="msg">
   <p style="color:rgb(173, 114, 228); font-size: 30px; font-family: Dela Gothic One;">HEY YOU ESTÁ EN TODAS,</p>
@@ -28,20 +29,23 @@
 <div class="container-combos text-center" style="margin-top: 30 px;">
   <div class="row">
       <div class="col"> 
-          <img src="assets/Kids/boton-mellis.jpg">
+          <img class="img-fluid "src="assets/Kids/boton-mellis.jpg">
       </div>
       <div class="col"> 
-          <img src="assets/Kids/boton-bandera.jpg">
+          <img class="img-fluid" src="assets/Kids/boton-bandera.jpg">
       </div>
       <div class="col"> 
-          <img src="assets/Kids/boton-bandera-seno.jpg">
+          <img class="img-fluid" src="assets/Kids/boton-bandera-seno.jpg">
       </div>
-  </div>
-  <div class="row" style="margin-top: 45px; margin-left: 30px;">
-      <button class="btn-reunion">SOLICITÁ UNA REUNIÓN ONILINE</button>
   </div>
 </div>
-
-<div class="container text-center" style="margin-top: 60px;">
-  <img src="assets/botones-base.jpg">
+<div class="container" >
+  <div class="row mt-3">
+      <div class="col-12 col-md-8 offset-md-2 text-center">
+          <button (click)="goToMessage()" class="btn-reunion btn btn-primary btn-lg">Solicitá una reunión online</button>
+      </div>
+  </div>
+</div>
+<div class="container text-center" style="margin-top: 20px;">
+  <img  class="img-fluid"src="assets/botones-base.jpg">
 </div>

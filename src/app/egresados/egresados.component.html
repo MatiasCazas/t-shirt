@@ -14,8 +14,8 @@
     <h2>Diseñamos estos combos para la banda</h2>
     <img src="assets/img54.jpg">
 </div> -->
-<div class="container-fluid" style=" background-image: url(assets/Egresados/cabecera-egresados.jpg); width: 100%; height: 100vh; background-size: cover; background-repeat: no-repeat; background-position: center;  ">
-
+<div class="container-fluid" style="margin-top: 60px;">
+    <img class="img-fluid" src="assets/Egresados/cabecera-egresados.jpg">
 </div>
 <div class="container-fluid" style="background-color: orangered; margin-top: 0px;">
     <p style="color: white; text-align: center; font-size: 40px; font-family: Dela Gothic One;"> Diseñamos estos combos para la banda </p>
@@ -33,16 +33,18 @@
    
 </div>
 <div class="container-fluid">
-    <img src="assets/Egresados/combos-egresados.jpg" style="width: 90%;"> 
+    <img  class="img-fluid"src="assets/Egresados/combos-egresados.jpg" style="width: 90%;"> 
 </div>
-<div class="container-fluid" style="background-image: url(assets/Egresados/fondo-personalizar.jpg); width: 100%; height: 30vh; background-size: cover; background-repeat: no-repeat; background-position: center;">
-    <div class="row">
-        <p class= "personaliza">O PERSONALIZÁ TU BUZO ACÁ</p>
-    </div>
-    <div class="row">
-        <button class="btn-personaliza btn-primary" type="submit"><a href="/customize" style="color:white;">DISEÑÁ TU COMBO</a></button>
+
+<div class="container-fluid" style="background-image: url(assets/Egresados/fondo-personalizar.jpg); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <div class="row justify-content-center align-items-center" style="height: 30vh;">
+        <div class="col text-center">
+            <p class="personaliza">O PERSONALIZÁ TU BUZO ACÁ</p>
+            <button (click)="goToCustomize()" class="btn-personaliza btn-primary" type="submit">DISEÑÁ TU COMBO</button> 
+        </div>
     </div>
 </div>
+
 <!-- <div class="container">
     <div class="row">
         <h3>Pack FULL: campera + buzo + remera + chomba</h3>
@@ -71,19 +73,23 @@
 <div class="container-combos text-center" style="margin-top: 30 px;">
     <div class="row" style="margin-left: 70px;">
         <div class="col"> 
-            <img src="assets/Egresados/boton-bandera.jpg">
+            <img class="img-fluid" src="assets/Egresados/boton-bandera.jpg">
         </div>
         <div class="col"> 
-            <img src="assets/Egresados/boton-beneficio.jpg">
+            <img class="img-fluid" src="assets/Egresados/boton-beneficio.jpg">
         </div>
         <div class="col"> 
-            <img src="assets/Egresados/boton-envios.jpg">
+            <img class="img-fluid" src="assets/Egresados/boton-envios.jpg">
         </div>
     </div>
-    <div class="row" style="margin-top: 45px; margin-left: 30px;">
-        <button class="btn-reunion">SOLICITÁ UNA REUNIÓN ONILINE</button>
+</div>
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-12 col-md-8 offset-md-2 text-center">
+            <button (click)="goToMessage()" class="btn-reunion">SOLICITÁ UNA REUNIÓN ONILINE</button>
+        </div>
     </div>
 </div>
 <div class="container text-center" style="margin-left: 70px;">
-    <img src="assets/botones-base.jpg">
+    <img  class="img-fluid" src="assets/botones-base.jpg">
 </div>

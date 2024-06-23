@@ -1,5 +1,42 @@
-<div class="message  text-primary">
-    <h2 class="text-center">Personaliza el buzo de tu promo o elegi tu combo</h2> 
-    <br>
-    <h2 class="text-center fw-bolder">Estamos en todas</h2>
-</div>
+<div class="container-fluid mb-4">
+    <p class="msg-consulta">Solicitá una reunión</p>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="Nombre-Apellido" placeholder="Nombre y apellido" [(ngModel)]="nombreApellido" name="nombreApellido" required>
+        <label for="Nombre-Apellido">Nombre y apellido</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="date" class="form-control" id="date" placeholder="Fecha" [(ngModel)]="date" name="date" required>
+        <label for="date">Fecha</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="time" class="form-control" id="horario" placeholder="Horario" [(ngModel)]="horario" name="horario" required>
+        <label for="horario">Horario</label>
+      </div>
+      <div class="form-floating mb-3">
+        <select class="form-select" id="floatingSelect" aria-label="Meet o Llamada"[(ngModel)]="meetingType" name="meetingType" (change)="onMeetingTypeChange()" required>
+          <option value="meet">Meet</option>
+          <option value="call">Llamada</option>
+        </select>
+        <label for="floatingSelect">Meet o Llamada </label>
+      </div>
+      <div *ngIf="meetingType === 'meet'" class="form-floating mb-3">
+        <input type="email" class="form-control" id="email" placeholder="Email" [(ngModel)]="email" name="email" required>
+        <label for="email">Email</label>
+      </div>
+      <div *ngIf="meetingType === 'call'" class="form-floating mb-3">
+        <input type="tel" class="form-control" id="telefono" placeholder="Número de Teléfono" [(ngModel)]="telefono" name="telefono" pattern="(\([0-9]{3}\)|[0-9]{3})[-\s]?[0-9]{3}[-\s]?[0-9]{4}" 
+        title="El formato válido es: (ddd) xxx-xxxx, ddd-xxx-xxxx o 15 xxx-xxxx" required>
+        <label for="telefono">Número de Teléfono</label>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </form>
+  </div>
+  
+    
+<!-- <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="email" placeholder="Email" required>
+    <label for="email">Email</label>
+</div> -->
