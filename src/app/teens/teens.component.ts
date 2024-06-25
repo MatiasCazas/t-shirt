@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-teens',
@@ -13,8 +14,14 @@ export class TeensComponent {
   currentIndex = 0;
   translateValue = 0;
 
-  constructor() { 
+  constructor(private router: Router) { 
 
+  }
+  goToCustomize(): void {
+    this.router.navigate(['/customize']);
+  }
+  goToMessage(): void{
+    this.router.navigate(['/message']);
   }
 
   ngOnInit(): void {

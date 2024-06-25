@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,14 +14,19 @@ export class HomeComponent {
   
   images: string[] = ['assets/slide1.jpg','assets/slide2.jpg', 'assets/slide3.jpg'];
   currentIndex = 0;
-  translateValue = 0;
+  translateValue = 0; 
 
-  constructor() { 
+  constructor(private router: Router) { 
 
+  }
+  goToMessage(): void{
+    this.router.navigate(['/message']);
   }
 
   ngOnInit(): void {
   }
+
+
 
 
   //slider

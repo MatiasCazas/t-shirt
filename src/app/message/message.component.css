@@ -1,7 +1,93 @@
-.message{
-    margin-top: 150px;
 
+.container-fluid{
+    margin-top: 150px;
 }
-.text-center{
-    color: black;
-}
+.msg-consulta{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Dela Gothic One';
+    color: rgb(231, 118, 12);
+  }
+  
+  
+  .form-floating{
+    margin-left:  220px;
+    margin-right: 220px;
+  }
+  
+  
+  .form-control{
+    border-radius: 35px;
+  }
+  .btn{
+    border: 0;
+    border-radius: 35px;
+    background-color: rgb(231, 118, 12);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-left: 220px;
+    margin-right: 220px;
+    height: auto;
+    font-family: 'Dela Gothic One';
+  }
+  .btn:hover {background-color: rgba(231, 118, 12, 0.76);}
+  
+@media (max-width: 1200px) {
+    .form-floating, .btn {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+  
+    .envios {
+        margin-right: 150px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .form-floating, .btn {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+  
+    .envios {
+        margin-right: 100px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .form-floating, .btn {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+  
+    .envios {
+        margin-right: 50px;
+    }
+  
+    .msg-consulta {
+        font-size: 30px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .form-floating, .btn {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+  
+    .envios {
+        margin-right: 20px;
+    }
+  
+    .slider-container {
+        height: 400px;
+    }
+  
+    .prev-button, .next-button {
+        font-size: 20px;
+    }
+  
+    .msg-consulta {
+        font-size: 25px;
+    }
+  }
