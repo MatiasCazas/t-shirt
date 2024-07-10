@@ -1,0 +1,22 @@
+.container-fluid{
+    margin-top: 90px;
+}
+.col{
+    width: auto;
+}
+
+.frente{
+    max-height: 500px;
+}
+.frente-mangas{
+    max-height: 500px;
+    margin-top: -526px;
+}
+
+.dorso{
+    max-height: 500px;
+}
+.form-control{
+    width: 2.5rem;
+    height: 2.5rem;
+}
