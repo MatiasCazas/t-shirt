@@ -1,32 +1,33 @@
 <div class="container-fluid">
     <div class="row"> 
         <div class="col" style="margin-top: 110px;">
-            <label for="exampleColorInput" class="form-label" for="capucha">capucha</label>
-            <input type="color" class="form-control form-control-color" id="capuchaColor" value="#563d7c" title="Choose your color">
-        
-            <label for="exampleColorInput" class="form-label">mangas</label>
-            <input type="color" class="form-control form-control-color" id="mangaColor" value="#563d7c" title="Choose your color">
-        
-            <label for="exampleColorInput" class="form-label">cuerpo</label>
-            <input type="color" class="form-control form-control-color" id="cuerpoColor" value="#563d7c" title="Choose your color">
-        
-            <label for="exampleColorInput" class="form-label">bolsillo  </label>
-            <input type="color" class="form-control form-control-color" id="bolsilloColor" value="#563d7c" title="Choose your color">
+            <div class="wrapper">
+                <ul>
+                    <li  #asColorVioleta (click)="paint('#563d7c')" type="color" class="form-control form-control-color" id="bolsilloColor"   value="#563d7c" style="background-color: #563d7c;"></li>
+                    <li #asColorRed (click)="paint('#FB0303')" type="color" class="form-control form-control-color" id="bolsilloColor"   value="#FB0303" style="background-color: #FB0303;"></li>
+                    <li #asColorGreen (click)="paint('#79FB03')"  type="color" class="form-control form-control-color" id="bolsilloColor"   value="#79FB03" style="background-color: #79FB03;"></li>
+                    <li #asColorCeleste  (click)="paint('#03FBC6')" type="color" class="form-control form-control-color" id="bolsilloColor"   value="#03FBC6" style="background-color: #03FBC6;"></li>
+                    <li #asColor  (click)="paint('#FB039F')" type="color" class="form-control form-control-color" id="bolsilloColor" value="#FB039F" style="background-color: #FB039F;"></li>
+                </ul>
+                <ul>
+                    <li (click)="estampadosW()"><img #asEstampados src="assets/textura1.jpg"></li>
+                </ul>
+            </div>     
+            <button #asReverseButton type="button" id="reverse" (click)="reverse()">reverse</button>
+            <button #asDeleteButton type="button" id="delete" (click)="deleteDesing()">Borrar diseño</button>
+            <button  (click)="mangasFrenteCall()" type="button">Mangas</button>
         </div>
         
         <div class="col" >
-        <div style="margin-top: 110px;">
-            <img id="capucha" style="margin-left: 300px; background-color: rgb(86, 61, 124);" src="assets/buzodiseño/capucha.png">
-        </div>  
-        <div style="margin-top: 5px;">
-            <img  id="manga"  src="assets/buzodiseño/manga-r.png">
-            <img id="cuerpo"  src="assets/buzodiseño/cuerpo.png">
-            <img id="bolsillo"  src="assets/buzodiseño/bolsillo.png">
-            <img id="manga"  src="assets/buzodiseño/manga-l.png">
+            <div>
+                <img #asFrenteImg class="frente" id="frente" src="assets/buzo1_frente.png"  >
+                <img #asMangasFrente class="frente-mangas" src="assets/mangas_frente.png" hidden> 
+            </div>
+            <div>
+                <img #asDorsoImg class="dorso" id="dorso"  src="assets/buzo1_dorso.png" hidden>
+                <img #asMangasDorso class="frente-mangas" src="assets/mangas_dorso.png" hidden>
+            </div>
 
         </div>
-        </div>
-
     </div>
-
 </div>

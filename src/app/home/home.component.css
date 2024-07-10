@@ -1,37 +1,79 @@
+
+.container-fluid-home{
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+.titulo--home{
+   
+    margin-top: 160px;
+    font-family: 'Dela Gothic One';
+    font-size: 3rem;
+    opacity: 0;
+    animation: fadeInText 0.8s ease-in forwards 1.7s; 
+}
+.texto--destacado{
+  color: #4f2c85;
+}
+@keyframes fadeInText {
+  0% {
+    opacity: 0; 
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+
 .slider-container {
   position: relative;
-  width:100%;
-  height: 34vw;
+  width: 100%;
+  height: 30vw; /* Cambiamos a vw para mantener la relación de aspecto */
   max-height: 682px;
+  margin: 0 auto;
   overflow: hidden;
-  margin: 40px auto;
 }
 
 .slider {
   display: flex;
-  transition: transform 0.5s ease;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
 }
 
 .slide {
   flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
-.prev-button, .next-button {
+.prev-button,
+.next-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #89FF95;
   border: none;
-  color: #89FF95;;
-  font-size: 24px;
+  padding: 10px 15px;
   cursor: pointer;
-  border-color: #89FF95;;
+  font-size: 18px;
+  z-index: 10;
 }
 
 .prev-button {
@@ -42,52 +84,42 @@
   right: 10px;
 }
 
-@media (max-width: 768px) {
-  .slider-container {
-      height: auto; 
+  
+  .prev-button,
+  .next-button {
+    padding: 8px 12px;
+    font-size: 16px;
   }
-}
-
-@media (max-width: 480px) {
-  .slider-container {
-      height: auto; 
-  }
-
-  .prev-button, .next-button {
-      font-size: 20px;
-      padding: 8px;
-  }
-}
-
-
 
   
-.container-message{
-  margin-top: 150px;
-}
-
-.home-message{
-    font-family: 'Dela Gothic One';
-      opacity: 0;
-      animation: fadeInText 0.8s ease-in forwards 1.7s; 
-}
-
-
-@keyframes fadeInText {
-  0% {
-    opacity: 0; 
+  .prev-button,
+  .next-button {
+    padding: 6px 10px;
+    font-size: 14px;
   }
-  100% {
-    opacity: 1; 
-  }
+
+.texto--subtitulo{
+  font-family: 'Dela Gothic One';
+  color: #4f2c85;
+  text-align: center;
 }
+
+
 .msg-consulta{
   font-size: 40px;
   text-align: center;
   font-family: 'Dela Gothic One';
   color: rgb(231, 118, 12);
 }
-
+.container-fluid-redesbanner{
+  margin-top: 2rem;
+  background-image: url('/assets/sumate-nvo.jpg');
+  width: 100%; 
+  height: 30vh; 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 .form-floating{
   margin-left:  220px;
@@ -117,7 +149,7 @@
     background-color: rgb(231, 118, 12);
     color: rgb(255, 255, 255);
     font-size: 25px;
-    margin-left: 100px;
+    margin-left: 100px; 
     margin-right: 220px;
     width: 60%;
     height: auto;
@@ -161,6 +193,7 @@
 }
 
 @media (max-width: 768px) {
+
   .form-floating, .btn {
       margin-left: 50px;
       margin-right: 50px;
@@ -173,30 +206,14 @@
   .msg-consulta {
       font-size: 30px;
   }
-}
-
-@media (max-width: 576px) {
-  .form-floating, .btn {
-      margin-left: 20px;
-      margin-right: 20px;
-  }
-
-  .envios {
-      margin-right: 20px;
-  }
-
+  
   .slider-container {
-      height: 400px;
-  }
-
-  .prev-button, .next-button {
-      font-size: 20px;
-  }
-
-  .msg-consulta {
-      font-size: 25px;
+    height: 60vw; /* Aumentamos la altura para dispositivos más pequeños */
+    
   }
 }
+
+
 
 .promo-text {
   font-size: 40px;
@@ -218,3 +235,88 @@
     margin-top: 20px;
   }
 }
+@media (max-width: 576px) {
+
+  .titulo--home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+  .container-fluid-home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-left: 350px;
+  }
+  .form-floating, .btn {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .container-fluid-enviosimg {
+      margin-right: 20px;
+  }
+
+  .slider-container {
+      height: 400px;
+  }
+
+  .prev-button, .next-button {
+      font-size: 20px;
+  }
+
+  .msg-consulta {
+      font-size: 25px;
+  }
+  .titulo{
+    font-size: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo{
+    text-align: center;
+    font-size: 1.85rem;
+  }
+  .slider-container {
+    display: flex;
+   margin-right: 18px;
+    width: 90%;
+    height: 70vw; /* Aumentamos aún más para móviles */
+  }
+  .container-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .img-fluid-card{
+    width: auto;
+    height: 70vh;
+  }
+  .subtitulo{
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .container-fluid-redesbanner{
+    height: 20vh;
+    margin-top: 20px;
+    display: felx;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-fluid-form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+  }
+ }

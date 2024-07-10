@@ -1,3 +1,7 @@
+*{
+	margin: 0;
+	padding: 0;
+}
 .float{
 	position:fixed;
 	width:60px;
@@ -15,4 +19,15 @@
 
 .my-float{
 	margin-top:16px;
+}
+@media (max-width: 576px) {
+	.container-fluid{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		
+	}
 }

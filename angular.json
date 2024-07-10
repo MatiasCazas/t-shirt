@@ -25,7 +25,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              {
+                "input": "src/app/home/home.component.css",
+                "bundleName": "home",
+                "inject": false
+              }
             ],
             "scripts": [],
             "server": "src/main.server.ts",
