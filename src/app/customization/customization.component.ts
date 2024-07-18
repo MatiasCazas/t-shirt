@@ -24,10 +24,24 @@ export class CustomizationComponent implements OnInit{
   @ViewChild('asMangasFrente') mangasFrente!: ElementRef;
   @ViewChild('asMangasDorso') mangasDorso!: ElementRef;
   @ViewChild('asEstampados') estampados!: ElementRef;
+  @ViewChild('asDiseñador') diseñador!: ElementRef;
+  @ViewChild('asDiseñadorBuzos') diseñadorBuzos!: ElementRef;
 
   constructor(private renderer2: Renderer2) {}
   
   ngOnInit(): void {
+  }
+
+  comenzar(): void{
+    const asDiseñador = this.diseñador.nativeElement;
+    const asDiseñadorBuzos = this.diseñadorBuzos.nativeElement; 
+    if (asDiseñadorBuzos.getAttribute('hidden')) {
+      this.renderer2.removeAttribute(asDiseñadorBuzos, 'hidden');
+      this.renderer2.setAttribute(asDiseñador, 'hiiden', 'true');
+    } else {
+      this.renderer2.removeAttribute(asDiseñadorBuzos, 'hidden');
+      this.renderer2.setAttribute(asDiseñador, 'hidden', 'true');
+    }
   }
 
   reverse(): void{

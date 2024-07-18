@@ -1,14 +1,40 @@
-.footer-img{
+.footer{
     background-color: #e4e4e4;
-    margin-top: 40px;
+    width: 100%;
+	height: auto;
+}
+.footer--contenedor{
+    display: flex;
+    flex-direction: column;
 }
 
-.footer{
-    font-size: 12px;
-    text-align: center;
-    color: #4f2c85;
-    font-family: 'Courier New', Courier, monospace;
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
 }
+.foot-2{
+    text-align: center;
+    font-family: Dela Gothic One;
+    color: #4f2c85;
+    background-color: #e4e4e4;
+
+}
+.contacto--hy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-img{
+    background-color: #e4e4e4;
+    margin-top: 65px;
+   
+}
+.COPYRIGH{
+    background-color: #e4e4e4;
+}
+
 p{
     color:#4f2c85;
 }
@@ -23,12 +49,13 @@ p{
 }
 @media (max-width: 576px) {
 	.container-fluid{
-		width: 100%;
-		height: auto;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		
+        width: 1000px;
+        height: auto;
+		padding: 0;
 	}
+    .COPYRIGH{
+        font-size: .5rem;
+    }
 }
+
+ 

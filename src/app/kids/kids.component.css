@@ -1,6 +1,10 @@
-.container{
-    margin-top: 140px;
-    position: relative;
+
+
+.subtitulo{
+  color: white;
+  text-align: center; 
+  font-size: 40px; 
+  font-family: Dela Gothic One;
 }
 .kids-msg{
     text-align: center;

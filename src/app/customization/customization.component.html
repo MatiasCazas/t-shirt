@@ -1,4 +1,9 @@
-<div class="container-fluid">
+<div #asDiseñador class="container-fluid diseñador fadeInText" >
+    <h1 class="title">¡La creatividad está a punto de despegar!</h1>
+    <img class="imgBanner" src="assets/imgDiseña.jpg" alt="">
+    <button #asComenzar  (click)="comenzar()" class="buttonComenzar" type="button">Comenzar</button>
+</div>
+<div #asDiseñadorBuzos class="container-fluid diseñador-buzos" hidden>
     <div class="row"> 
         <div class="col" style="margin-top: 110px;">
             <div class="wrapper">
@@ -19,11 +24,9 @@
         </div>
         
         <div class="col" >
-            <div>
-                <img #asFrenteImg class="frente" id="frente" src="assets/buzo1_frente.png"  >
-                <img #asMangasFrente class="frente-mangas" src="assets/mangas_frente.png" hidden> 
-            </div>
-            <div>
+            <div class="contenedor--imgFrente">
+                <img #asFrenteImg class="img frente" id="frente" src="assets/buzo1_frente.png"  >
+                <img #asMangasFrente class="img frente-mangas" src="assets/mangas_frente.png" hidden> 
                 <img #asDorsoImg class="dorso" id="dorso"  src="assets/buzo1_dorso.png" hidden>
                 <img #asMangasDorso class="frente-mangas" src="assets/mangas_dorso.png" hidden>
             </div>

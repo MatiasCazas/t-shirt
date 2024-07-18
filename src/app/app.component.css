@@ -20,14 +20,39 @@
 .my-float{
 	margin-top:16px;
 }
-@media (max-width: 576px) {
-	.container-fluid{
-		width: 100%;
-		height: auto;
+
+.responsive{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 3rem;
+	
+}
+
+footer{
+	max-width: 100vw;
+
+}
+
+app-footer{
+	margin-top: auto;
+}
+
+@media (max-width: 623px) {
+	.responsive{
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		flex-direction: column;
-		
+		justify-content: space-between;
+		align-items: center;
+		align-self: center;
+		align-content: center;
+		gap: 3rem;
 	}
+	
+	app-footer{
+		padding: 0;
+		width: 1000px;	
+	}
+
 }
