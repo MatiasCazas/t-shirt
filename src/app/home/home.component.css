@@ -1,6 +1,5 @@
 
 .container-fluid-home{
-
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -8,12 +7,10 @@
     justify-content: center;
     width: 100%;
     padding: 20px;
-    box-sizing: border-box;
+    gap: 2.5rem;
     
 }
 .titulo--home{
-   
-    margin-top: 160px;
     font-family: 'Dela Gothic One';
     font-size: 3rem;
     opacity: 0;
@@ -103,6 +100,10 @@
   color: #4f2c85;
   text-align: center;
 }
+.container-card{
+  display: flex;
+  flex-flow: row wrap;
+}
 
 
 .msg-consulta{
@@ -111,8 +112,17 @@
   font-family: 'Dela Gothic One';
   color: rgb(231, 118, 12);
 }
+
+.redp{
+  font-size:30px;
+  font-family: 'Dela Gothic One'; 
+  color:white; 
+  text-align: center;
+}
 .container-fluid-redesbanner{
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url('/assets/sumate-nvo.jpg');
   width: 100%; 
   height: 30vh; 
@@ -121,14 +131,24 @@
   background-position: center;
 }
 
-.form-floating{
-  margin-left:  220px;
-  margin-right: 220px;
-}
-
+  /*Formulario */
+.container-fluid-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
 .form-control{
+  align-items: center;
   border-radius: 35px;
+  width: 600px;
+  border-color: grey;
+}
+
+.msg{
+  resize: none;
 }
 .btn{
   border: 0;
@@ -171,10 +191,7 @@
 }
 
 @media (max-width: 1200px) {
-  .form-floating, .btn {
-      margin-left: 150px;
-      margin-right: 150px;
-  }
+ 
 
   .envios {
       margin-right: 150px;
@@ -235,21 +252,38 @@
     margin-top: 20px;
   }
 }
-@media (max-width: 576px) {
-
+@media (max-width: 623px) {
+  .container-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    
+  }
+  .img-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 250px;
+    height: 250px;
+  }
   .titulo--home{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 2.5rem;
+   
   }
   .container-fluid-home{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    margin-left: 350px;
+      margin-left: 5rem;
   }
   .form-floating, .btn {
       margin-left: 20px;
@@ -271,9 +305,7 @@
   .msg-consulta {
       font-size: 25px;
   }
-  .titulo{
-    font-size: 2px;
-  }
+  
 }
 
 @media (max-width: 480px) {

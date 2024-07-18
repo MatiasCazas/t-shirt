@@ -1,11 +1,10 @@
-
 <div class="container-fluid-home">
-
+    <!-- Titulo-->
     <div class="container mt-8 mb-5 text-center titulo--home">
         <h1 class="titulo">Personaliza el buzo de tu promo o elegi tu combo<br>
         <strong class="texto--destacado">Estamos en todas</strong></h1>
     </div>
-
+    <!--Slider-->
     <div class="slider-container">
         <div class="slider" [style.transform]="'translateX(' + translateValue + '%)'">
             <div class="slide" *ngFor="let image of images; let i = index">
@@ -20,32 +19,33 @@
         <h2 class="subtitulo">Chusmeá los combos que tenemos para tu curso </h2>
     </div>
 
-    <div class="container-card mb-8">
+    <!-- imgs-->
+    <div class="container-card">
         <div class="row">
-            <div class="col-sm-3 mb-8">
+            <div class="col">
                 <div class="card">
-                    <img class="img-fluid-card" src="assets/menu-kids.jpg">
+                    <img class="img-card" src="assets/menu-kids.jpg">
                 </div>
             </div>
-            <div class="col-sm-3 mb-8">
+            <div class="col">
                 <div class="card">
-                    <img class="img-fluid-card" src="assets/menu-basics.jpg">
+                    <img class="img-card" src="assets/menu-basics.jpg">
                 </div>
             </div>
-            <div class="col-sm-3 mb-8">
+            <div class="col">
                 <div class="card">
-                    <img class="img-fluid-card" src="assets/menu-egresados.jpg">
+                    <img class="img-card" src="assets/menu-egresados.jpg">
                 </div>
             </div>
-            <div class="col-sm-3 mb-8">
+            <div class="col">
                 <div class="card">
-                    <img class="img-fluid-card" src="assets/menu-teens.jpg">
+                    <img class="img-card" src="assets/menu-teens.jpg">
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container mt-8 mb-4" style="margin-top: 30px;">
+<!--video-->
+    <div class="container mt-8 mb-4 video">
         <div class="ratio ratio-16x9">
             <iframe src="assets/hey_you_institucional.mp4" title="YouTube video" allowfullscreen></iframe>
         </div>
@@ -67,19 +67,20 @@
         </div>
     </div>
     
+    <!--Banner de Redes-->
     <div class="container-fluid-redesbanner">
         <div class="row">
-            <p style="margin-top: 25px; font-size:30px; font-family: 'Dela Gothic One'; color:white; text-align: center;">¡Sumate a la comunidad HY!</p>
+            <p class="redp">¡Sumate a la comunidad HY!</p>
         </div>
         <div class="row">
             <div class="col text-center">
-                <a href="https://www.facebook.com/heyyouegresados/?locale=es_LA" style="margin-right: 20px;"><img src="assets/redes-sumate/redes-sumate-fb.jpg" alt="fb-footer"></a>
+                <a href="https://www.facebook.com/heyyouegresados/?locale=es_LA"><img src="assets/redes-sumate/redes-sumate-fb.jpg" alt="fb-footer"></a>
                 <a href="https://www.instagram.com/heyyouegresados/?hl=es"><img src="assets/redes-sumate/redes-sumate-ig.jpg" alt="ig-footer"></a>
-                <a href="#" style="margin-left: 20px;"><img src="assets/redes-sumate/redes-sumate-tiktok.jpg" alt="tiktok-footer"></a>
+                <a href="#"><img src="assets/redes-sumate/redes-sumate-tiktok.jpg" alt="tiktok-footer"></a>
             </div>
         </div>
     </div>
-    
+    <!-- Formulario -->
     <div class="container-fluid-form mb-4">
         <h2 class="msg-consulta">Consultanos</h2>
         <form class="formulario">

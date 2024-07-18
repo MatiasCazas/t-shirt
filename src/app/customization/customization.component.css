@@ -1,22 +1,91 @@
 .container-fluid{
-    margin-top: 90px;
+    margin-top: 110px;
 }
+.diseñador-buzos{
+    opacity: 0;
+    animation: fadeInText 0.8s ease-in forwards 1s; 
+}
+.diseñador{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInText 0.8s ease-in forwards 1.7s; 
+}
+
+@keyframes fadeInText {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+.imgBanner{
+    width: 800px;
+
+}
+.buttonComenzar{
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    color: white;
+    background-color: orangered;
+    border-color: orangered;
+    font-size: 1.5rem;
+    font-family: 'Dela Gothic One' ,sans-serif;
+}
+.buttonComenzar:hover{
+    background-color: rgba(255, 68, 0, 0.781);
+    border-color: rgba(255, 68, 0, 0.781);
+
+}
+
+.title{
+    font-size: 2rem;
+    font-family: 'Dela Gothic One' ,sans-serif;
+    color: #4f2c85;
+    text-align: center;
+}
+
+
 .col{
     width: auto;
 }
 
-.frente{
-    max-height: 500px;
-}
-.frente-mangas{
-    max-height: 500px;
-    margin-top: -526px;
+.svg{
+    max-height: 300px;
+    margin-top: -400px;
+    width: 100px;
 }
 
-.dorso{
-    max-height: 500px;
-}
 .form-control{
     width: 2.5rem;
     height: 2.5rem;
 }
+.contenedor--imgFrente{
+    position: relative;
+    width: 500px; /* Ajuste según sea necesario */
+    height: 300px
+}
+
+.img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.frente {
+    max-height: 500px;
+    z-index: 1;
+  }
+
+.dorso{
+    max-height: 500px;
+    z-index: 1;
+}
+.frente-mangas {
+    z-index: 2;
+    max-height: 500px;
+
+  }

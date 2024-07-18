@@ -1,17 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-.container-fluid{
-    width: 100%;
+*{
+	padding: 0;
+	margin: 0;
 }
 
+
 @media (max-width: 576px) {
-	.container-fluid{
-		width: 100%;
-		height: auto;
+
+	.app--root{
 		display: flex;
+		flex-flow: column wrap;
 		justify-content: center;
-		align-items: center;
-		
-		
 	}
+	
+
 
 }
