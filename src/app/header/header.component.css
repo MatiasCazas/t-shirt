@@ -22,7 +22,7 @@
   color: #fff;
   text-decoration: none;
   padding: 10px 16px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: 'Dela Gothic One', sans-serif;
   transition: color 0.3s ease;
 }
@@ -46,7 +46,7 @@
 }
 
 
-@media (min-width: 992px) {
+@media (min-width: 623px) {
   .menu-toggle {
     display: none;
   }
