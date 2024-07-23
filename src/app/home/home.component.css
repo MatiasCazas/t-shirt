@@ -8,26 +8,15 @@
     width: 100%;
     padding: 20px;
     gap: 2.5rem;
-    
+    margin-top: 42px;
 }
-.titulo--home{
-    font-family: 'Dela Gothic One';
-    font-size: 3rem;
-    opacity: 0;
-    animation: fadeInText 0.8s ease-in forwards 1.7s; 
+.imgHome{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
 }
-.texto--destacado{
-  color: #4f2c85;
-}
-@keyframes fadeInText {
-  0% {
-    opacity: 0; 
-  }
-  100% {
-    opacity: 1; 
-  }
-}
-
 .slider-container {
   position: relative;
   width: 100%;
